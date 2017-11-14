@@ -8,7 +8,7 @@ All the sensors on the bike are connected to the Arduino. The Arduino communicat
 
 To turn on the bike, plug in the battery in the bike's hardware box. You can check the battery's voltage using a multimeter (set to 60 V). The battery is 29 V fully charged. It at function at lower voltages but you may notice the bike unexpectedly shutting down while testing. Make sure the Arduino and Raspberry Pi are both powered on. 
 
-You may need to front motor on while testing. There are two switched on the right side of the hardware box. The right one turns on the front motor, and the left one turns on the rear motor. Make sure the motors are turned off while uploading code.
+The front motor should be on when testing. There are two switches on the right side of the hardware box. The right one turns on the front motor, and the left one turns on the rear motor. There is also a master switch on the back of the bike that needs to be switched on. If you need to turn off the bike instantly, press the red button on top of the hardware box. Make sure the motors are turned off while uploading code.
 
 ### Connect to the Pi
 There are two ways to do this. When testing in the lab use Locomotion Wifi. When testing outside, use Ad-hoc wifi to connect to the Raspberry Pi without internet.
