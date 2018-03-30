@@ -10,7 +10,11 @@ Welcome to the guides for Cornell's Autonomous Bicycle Team.
 
 # Hardware Guide
 
-# Software
+[General Issues](bikeIssues.md)
+
+# Software Help
+
+[Git and GitHub for Beginners](gitTutorial.md)
 
 [Testing](testing.md)
 
