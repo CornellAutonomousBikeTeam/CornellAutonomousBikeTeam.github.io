@@ -8,6 +8,8 @@ Welcome to the guides for Cornell's Autonomous Bicycle Team.
 
 [Steer-By-Wire-Bike](pages/sbw.md)
 
+[(Slightly) more formal intro](https://www.overleaf.com/15372862zxppgvydbcbt#/58247586/)
+
 # Hardware Guide
 
 [General Issues](pages/bikeIssues.md)
