@@ -18,4 +18,6 @@ Welcome to the guides for Cornell's Autonomous Bicycle Team.
 
 [Git and GitHub for Beginners](pages/gitTutorial.md)
 
+[Issues for the Vision Subteam](pages/visionIssues.md)
+
 [Testing](pages/testing.md)
