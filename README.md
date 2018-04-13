@@ -23,4 +23,4 @@ our past semesterly papers can be found on our website [here](https://bike.engin
 
 [Issues for the Vision Subteam](pages/visionIssues.md)
 
-[Testing](pages/testing.md)
+[Running Tests with the Bike](pages/testing.md)
