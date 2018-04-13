@@ -11,7 +11,7 @@ our past semesterly papers can be found on our website [here](https://bike.engin
 
 [Steer-By-Wire-Bike](pages/sbw.md)
 
-[(Slightly) more formal intro](https://www.overleaf.com/15372862zxppgvydbcbt#/58247586/)
+[A (Slightly) More Formal Intro](https://www.overleaf.com/15372862zxppgvydbcbt#/58247586/)
 
 # Hardware Guide
 
