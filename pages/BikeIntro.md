@@ -2,16 +2,15 @@
 
 # Basic Parts of the Bike
 
-This is the bike:
-![Insert image of bike here]
-(img/bike.jpg)
+This is MIKE(Mechanical Irritating Kickstand Experiment) the bike:
+[[/img/bike.png | alt = bike]]
 
-So let's get down to the basic parts of the bike:
+The goal of this bike to be the world's first self-steering, self-balancing, and self-navigating bicycle. So let's get down to the basic parts of the bike:
 
 ## Battery
 
-![Battery Image]
-(https://github.com/CornellAutonomousBikeTeam/CornellAutonomousBikeTeam.github.io/blob/master/img/battery.jpg)
+
+[[https://github.com/CornellAutonomousBikeTeam/CornellAutonomousBikeTeam.github.io/blob/master/img/battery.jpg | alt = battery]]
 
 This is our battery. Our batteries have a nominal voltage of 27 V, which means
 that their voltage can range from 25-29 V. In order to run on the bike, you want
@@ -24,7 +23,7 @@ leave the lab or
 ![IMU]
 (https://github.com/CornellAutonomousBikeTeam/CornellAutonomousBikeTeam.github.io/blob/master/img/imu.jpg)
 
-This is the IMU, which stands for **. The IMU takes a few **, including Euler angles.
+This is the IMU, which stands for inertial measurement unit. The IMU has several features, including accelerometers, gyroscopes, and magnemometers, and uses these to measure a variety of data, including force, angular rate, magnetic fields, and Euler angles.
 
 ### A brief interlude about Euler Angles
 [insert image of Euler angles here]
