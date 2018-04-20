@@ -1,7 +1,7 @@
 # PCB
 
 ## Some Basic Information
-
+So the bike team and CU Sail (Professor Ruina's other project team) have collaborated together to make a custom printed circuit board that can be used by both teams, as there are a high number of common features that both teams need from a PCB. 
 
 ## Arduino Due
 
