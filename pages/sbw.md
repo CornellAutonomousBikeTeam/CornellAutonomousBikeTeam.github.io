@@ -1,4 +1,7 @@
-# Steer-By-Wire Bike
+# Steer-By-Wire Bike 
+                                                                                                    By Linda Lu
+                                                                                                    Steer-by-wire subteam
+                                                                                                    For ENGRC 2023
 
 "What an unusual name! What does it mean?" 
 
