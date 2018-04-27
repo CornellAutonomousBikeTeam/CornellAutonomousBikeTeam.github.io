@@ -1,8 +1,4 @@
 # Steer-By-Wire Bike 
-                                                                                                    
-                                                                                                    By Linda Lu
-                                                                                                    Steer-by-wire subteam
-                                                                                                    For ENGRC 2023
 
 "What an unusual name! What does it mean?" 
 
@@ -33,9 +29,12 @@ For the most part, the steer-by-wire bike is similar to our current bike. They u
 The steer-by-wire bike also has different physical parameters such as the location of the center of mass (COM) that will make it react differently to disturbances compared to the Bike. 
 
 
-
 # Current work
 
+                                                                                                    
+                                                                                                    By Linda Lu
+                                                                                                    Steer-by-wire subteam
+                                                                                                    For ENGRC 2023
 Presently, we are working on tuning the balance controller and PID controller on the steer-by-wire bike. 
 
 To make the bike balance well and provide smooth user experience, a robust PID controller is a must. A good PID controller can ensure that our directions are executed by the wheel in an accurate and responsive way. The PID controller is essentially three constant terms that we use to determine our motor output, proportional term (P), Integral term (I) and Derivative term (D). Therefore, a PID controller continuously commands an output proportional to a measured error, its integral and its derivative. On our bike, we only consider the proportional and derivative terms; we apply a correction that is linear in displacement and velocity: output=k1x+ k2v.
