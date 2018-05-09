@@ -8,11 +8,13 @@
 
 ## Behind the Name
 
-Our steer-by-wire bike took inspiration from the fly-by-wire control system in aircrafts which replaces mechanical flight control with an electronic control system. We have taken that idea and applied it to our steer-by-wire bike, which will incorporate both user input and an internal control system to provide a good user experience.
+Our steer-by-wire bike takes inspiration from the fly-by-wire airplanes. In fly-by-wire airplanes, rather than having a mechanical connection between the control surfaces, an control signal is sent electronically. On our bicycle, the handlebar is not mechanically connected to the front wheel. Instead, we measure the rotation of the handlebar, send the signal by wire to a computer which controls the motor connected to the front wheel steering. Hence, steer-by-wire.
 
 # Goal of the Steer-By-Wire Bike
 
-The goal of the steer-by-wire bike is to provide comfortable balance assisted riding for a user, by taking the user input from the handlebars and consider it alongside an internal control system to give an output that provides the best user experience.
+Fly-by-wire systems help balance unstable airplanes. Similarly, we want our steer-by-wire bike to help a user balance.
+The goal of the steer-by-wire bike is to improve rider experience. We think that balance assistence will make riding safer and more enjoyable, especially 
+We take the handblebar input and use an internal control system to give motor output that helps the bike balance.
 
 As of Spring 2018, the steer-by-wire bike functions in one-to-one mode, i.e. the wheel always tries to follow the handelbar. However, we are working towards providing balance asistance while still mimicking the feeling of a real bike. Right now our steer-by-wire subteam is working on tuning the balance controller and PID controller on the bike, so we can prevent user from making turns that will throw a real bike off balance. The details of the controllers will be explained in later section.
 
@@ -27,9 +29,9 @@ The steer-by-wire bike also has different physical parameters such as the locati
 
 # Current work
 
-Presently, we are working on tuning the balance controller and PID controller on the steer-by-wire bike. 
+Presently, the work is divided into two parts: the balance controller and the front motor controller. 
 
-To make the bike balance well and provide smooth user experience, a robust PID controller is a must. A good PID controller can ensure that our directions are executed by the wheel in an accurate and responsive way. The PID controller is essentially three constant terms that we use to determine our motor output, proportional term (P), Integral term (I) and Derivative term (D). Therefore, a PID controller continuously commands an output proportional to a measured error, its integral and its derivative. On our bike, we only consider the proportional and derivative terms; we apply a correction that is linear in displacement and velocity: output=k1x+ k2v.
+Finding a good enough front motor controller has been a challenge for the team. The front motor controller takes as input the desired steer angle and attempts to achieve that steer angle as quickly and as accurately as possible. We need a good front motor controller to ensure that our directions are executed by the wheel in an accurate and responsive way. The PID controller is essentially three constant terms that we use to determine our motor output, proportional term (P), Integral term (I) and Derivative term (D). Therefore, a PID controller continuously commands an output proportional to a measured error, its integral and its derivative. On our bike, we only consider the proportional and derivative terms; we apply a correction that is linear in displacement and velocity: output=k1x+ k2v.
 
 We need a PID controller, defined by the pair of constants k1 and k2, that can go to the desired position the fastest with overshoot below a threshold given a possible displacement in real-life situation. However, these two constants are not linearly separable in the solution to the equation of motion which determines the optimal output that achieves our goal, so we cannot just tune them independently. Furthermore, the motor is difficult to characterize, so we are determining the optimal gains experimentally by analyzing the responses of different set of gains. 
 
